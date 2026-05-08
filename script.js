@@ -1,3 +1,3 @@
 // script.js
 
-console.log("NV Cafe Loaded Successfully");
+console.log("NV Cafe Website Loaded");
