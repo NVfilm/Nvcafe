@@ -7,8 +7,12 @@
     font-family:'Montserrat',sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    background:#f5f1ea;
+    background:#f7f3ef;
     color:#222;
     overflow-x:hidden;
 }
@@ -33,6 +37,10 @@ body{
     justify-content:space-between;
     align-items:center;
     background:white;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 15px rgba(0,0,0,0.05);
 }
 
 .logo{
@@ -46,6 +54,7 @@ nav a{
     color:#222;
     margin-left:30px;
     font-weight:500;
+    transition:0.3s;
 }
 
 nav a:hover{
@@ -55,10 +64,10 @@ nav a:hover{
 /* HERO */
 
 .hero{
+    padding:80px 7%;
     display:grid;
     grid-template-columns:1fr 1fr;
     align-items:center;
-    padding:80px 7%;
     gap:60px;
 }
 
@@ -69,9 +78,9 @@ nav a:hover{
 }
 
 .hero-left h1{
-    font-size:90px;
+    font-size:88px;
     line-height:1;
-    margin:20px 0;
+    margin:25px 0;
     color:#3d2314;
 }
 
@@ -93,6 +102,11 @@ nav a:hover{
     padding:16px 34px;
     border-radius:50px;
     text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-dark:hover{
+    transform:translateY(-5px);
 }
 
 .btn-light{
@@ -106,14 +120,14 @@ nav a:hover{
 .hero-right img{
     width:100%;
     border-radius:30px;
-    height:700px;
+    height:720px;
     object-fit:cover;
 }
 
 /* CATEGORIES */
 
 .categories{
-    padding:40px 7%;
+    padding:20px 7% 80px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
@@ -124,6 +138,11 @@ nav a:hover{
     border-radius:25px;
     overflow:hidden;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
 }
 
 .category-card img{
@@ -137,71 +156,70 @@ nav a:hover{
     font-size:28px;
 }
 
-/* BANNER */
+/* OFFER */
 
-.banner{
-    margin:80px 7%;
+.offer-banner{
+    margin:0 7%;
     border-radius:35px;
     overflow:hidden;
+    position:relative;
+    padding:130px 80px;
     background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop');
     background-size:cover;
     background-position:center;
-    padding:120px 80px;
-    position:relative;
 }
 
-.banner::before{
-    content:'';
+.overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,0.45);
 }
 
-.banner-content{
+.offer-content{
     position:relative;
     z-index:2;
     color:white;
 }
 
-.banner-content span{
+.offer-content span{
     letter-spacing:2px;
 }
 
-.banner-content h2{
-    font-size:70px;
+.offer-content h2{
+    font-size:72px;
     margin:20px 0;
 }
 
-.banner-content a{
+.offer-content a{
+    display:inline-block;
     background:white;
     color:black;
     text-decoration:none;
-    padding:16px 32px;
+    padding:16px 34px;
     border-radius:50px;
-    display:inline-block;
 }
 
-/* TITLE */
+/* COMMON */
 
-.title{
+.section-title{
     text-align:center;
     margin-bottom:60px;
 }
 
-.title span{
+.section-title span{
     color:#8b5e3c;
     letter-spacing:2px;
 }
 
-.title h2{
+.section-title h2{
     font-size:55px;
     margin-top:10px;
 }
 
 /* MENU */
 
-.special-menu{
-    padding:80px 7%;
+.menu-section{
+    padding:100px 7%;
 }
 
 .menu-grid{
@@ -214,6 +232,12 @@ nav a:hover{
     background:white;
     border-radius:25px;
     overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
 }
 
 .menu-card img{
@@ -246,7 +270,7 @@ nav a:hover{
 /* EXPERIENCE */
 
 .experience{
-    padding:80px 7%;
+    padding:40px 7% 100px;
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:60px;
@@ -269,8 +293,8 @@ nav a:hover{
 }
 
 .experience-content p{
-    line-height:1.9;
     color:#555;
+    line-height:1.9;
     margin-bottom:30px;
 }
 
@@ -280,6 +304,59 @@ nav a:hover{
     padding:18px 30px;
     border-radius:50px;
     display:inline-block;
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:20px 7% 100px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:25px;
+    transition:0.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:0 7% 100px;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.testimonial-card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.06);
+}
+
+.testimonial-card p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.testimonial-card h4{
+    color:#8b5e3c;
 }
 
 /* CONTACT */
@@ -315,6 +392,7 @@ nav a:hover{
     background:white;
     border-radius:14px;
     font-size:16px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
 }
 
 .contact-form textarea{
@@ -327,8 +405,8 @@ nav a:hover{
     background:#3d2314;
     color:white;
     border-radius:50px;
-    cursor:pointer;
     font-size:16px;
+    cursor:pointer;
 }
 
 /* FOOTER */
@@ -337,11 +415,11 @@ footer{
     background:#2a170d;
     color:white;
     text-align:center;
-    padding:50px;
+    padding:55px;
 }
 
 footer h2{
-    font-size:36px;
+    font-size:38px;
     margin-bottom:10px;
 }
 
@@ -356,7 +434,9 @@ footer h2{
     }
 
     .categories,
-    .menu-grid{
+    .menu-grid,
+    .gallery-grid,
+    .testimonial-grid{
         grid-template-columns:1fr;
     }
 
@@ -364,11 +444,11 @@ footer h2{
         font-size:55px;
     }
 
-    .banner-content h2{
+    .offer-content h2{
         font-size:45px;
     }
 
-    .title h2,
+    .section-title h2,
     .experience-content h2,
     .contact-left h2{
         font-size:38px;
