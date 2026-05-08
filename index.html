@@ -5,12 +5,12 @@
 
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>NV Cafe</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,11 +21,13 @@
 
 <body>
 
-  <!-- TOPBAR -->
+  <!-- TOP BAR -->
 
   <div class="topbar">
 
-    <p>WELCOME TO NV CAFE • PREMIUM COFFEE EXPERIENCE</p>
+    <p>
+      FREE COFFEE ON YOUR FIRST ORDER ☕
+    </p>
 
   </div>
 
@@ -40,11 +42,11 @@
 
     <nav>
 
-      <a href="">Cafe Menu</a>
-      <a href="">Offers</a>
-      <a href="">Cafe Near Me</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
+      <a href="#menu">Menu</a>
+      <a href="#offers">Offers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
 
     </nav>
 
@@ -57,27 +59,26 @@
 
     <div class="hero-left">
 
-      <span>NEW EXPERIENCE</span>
+      <span>PREMIUM COFFEE EXPERIENCE</span>
 
       <h1>
-        Coffee <br>
-        Meets <br>
-        Comfort
+        Coffee Makes <br>
+        Every Day Better
       </h1>
 
       <p>
-        Freshly brewed premium coffee crafted
-        for every mood & every moment.
+        Freshly brewed handcrafted coffee made
+        for coffee lovers & beautiful moments.
       </p>
 
       <div class="hero-buttons">
 
-        <a href="" class="btn-dark">
+        <a href="#menu" class="btn-dark">
           Explore Menu
         </a>
 
-        <a href="" class="btn-light">
-          Book Table
+        <a href="#contact" class="btn-light">
+          Reserve Table
         </a>
 
       </div>
@@ -94,7 +95,7 @@
   </section>
 
 
-  <!-- CATEGORY SECTION -->
+  <!-- CATEGORIES -->
 
   <section class="categories">
 
@@ -106,39 +107,43 @@
 
     </div>
 
+
     <div class="category-card">
 
       <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?q=80&w=1200&auto=format&fit=crop">
 
-      <h3>Cold Beverages</h3>
+      <h3>Cold Drinks</h3>
 
     </div>
+
 
     <div class="category-card">
 
       <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1200&auto=format&fit=crop">
 
-      <h3>Sweet Desserts</h3>
+      <h3>Desserts</h3>
 
     </div>
 
   </section>
 
 
-  <!-- BANNER -->
+  <!-- OFFER BANNER -->
 
-  <section class="banner">
+  <section class="offer-banner" id="offers">
 
-    <div class="banner-content">
+    <div class="overlay"></div>
 
-      <span>LIMITED OFFER</span>
+    <div class="offer-content">
+
+      <span>LIMITED TIME OFFER</span>
 
       <h2>
         Buy 1 Coffee <br>
         Get 1 Free
       </h2>
 
-      <a href="">
+      <a href="#contact">
         Order Now
       </a>
 
@@ -147,15 +152,15 @@
   </section>
 
 
-  <!-- SPECIAL MENU -->
+  <!-- MENU -->
 
-  <section class="special-menu">
+  <section class="menu-section" id="menu">
 
-    <div class="title">
+    <div class="section-title">
 
-      <span>POPULAR PICKS</span>
+      <span>POPULAR MENU</span>
 
-      <h2>Signature Menu</h2>
+      <h2>Signature Drinks</h2>
 
     </div>
 
@@ -171,7 +176,7 @@
           <h3>Cappuccino</h3>
 
           <p>
-            Creamy espresso with smooth milk foam.
+            Creamy handcrafted coffee with smooth texture.
           </p>
 
           <span>₹199</span>
@@ -190,7 +195,7 @@
           <h3>Cold Coffee</h3>
 
           <p>
-            Refreshing chilled premium coffee.
+            Refreshing premium chilled coffee experience.
           </p>
 
           <span>₹249</span>
@@ -209,7 +214,7 @@
           <h3>Chocolate Shake</h3>
 
           <p>
-            Rich chocolate blend with creamy texture.
+            Rich chocolate blended creamy perfection.
           </p>
 
           <span>₹299</span>
@@ -225,7 +230,7 @@
 
   <!-- EXPERIENCE -->
 
-  <section class="experience">
+  <section class="experience" id="about">
 
     <div class="experience-image">
 
@@ -239,13 +244,13 @@
       <span>CAFE EXPERIENCE</span>
 
       <h2>
-        Relaxing Spaces <br>
-        Beautiful Interiors
+        Relaxing Interiors <br>
+        Premium Ambience
       </h2>
 
       <p>
-        Enjoy premium ambience, aesthetic interiors,
-        handcrafted beverages and cozy seating.
+        Experience luxury seating, aesthetic interiors,
+        handcrafted beverages and relaxing music.
       </p>
 
       <div class="rating-box">
@@ -259,9 +264,98 @@
   </section>
 
 
+  <!-- GALLERY -->
+
+  <section class="gallery" id="gallery">
+
+    <div class="section-title">
+
+      <span>OUR GALLERY</span>
+
+      <h2>Cafe Moments</h2>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
+
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+
+  <!-- TESTIMONIALS -->
+
+  <section class="testimonials">
+
+    <div class="section-title">
+
+      <span>REVIEWS</span>
+
+      <h2>What Customers Say</h2>
+
+    </div>
+
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial-card">
+
+        <p>
+          “Amazing ambience and premium coffee quality.
+          One of my favorite cafes.”
+        </p>
+
+        <h4>
+          — Rahul Verma
+        </h4>
+
+      </div>
+
+
+      <div class="testimonial-card">
+
+        <p>
+          “Perfect place for meetings and relaxing.
+          Loved the interiors.”
+        </p>
+
+        <h4>
+          — Sneha Kapoor
+        </h4>
+
+      </div>
+
+
+      <div class="testimonial-card">
+
+        <p>
+          “Affordable luxury cafe experience with
+          beautiful atmosphere.”
+        </p>
+
+        <h4>
+          — Aman Khurana
+        </h4>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
   <!-- CONTACT -->
 
-  <section class="contact">
+  <section class="contact" id="contact">
 
     <div class="contact-left">
 
@@ -299,13 +393,17 @@
 
   <footer>
 
-    <h2>NV CAFE</h2>
+    <h2>
+      NV CAFE
+    </h2>
 
     <p>
       Crafted With Coffee & Love
     </p>
 
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 
